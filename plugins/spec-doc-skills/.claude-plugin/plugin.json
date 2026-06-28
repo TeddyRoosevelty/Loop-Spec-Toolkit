@@ -1,0 +1,16 @@
+{
+  "name": "spec-docs",
+  "description": "Generate grounded improvement ideas, shape them into requirements docs, turn those into implementation plans and ship them, review the changes, and design the product strategy and JTBD docs.",
+  "version": "0.13.0",
+  "author": {
+    "name": "TeddyRoosevelty"
+  },
+  "userConfig": {
+    "save_path": {
+      "type": "directory",
+      "title": "Document save location",
+      "description": "Root folder where Spec Doc Skills save their documents, relative to the project root. Strategy and JTBD save here directly; ideation, requirements, and plans save into subfolders beneath it.",
+      "default": ".spec-docs/docs"
+    }
+  }
+}
