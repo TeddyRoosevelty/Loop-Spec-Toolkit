@@ -1,5 +1,5 @@
 {
-  "name": "shipwright-marketplace",
+  "name": "shipwright",
   "description": "A marketplace of Claude Code plugins.",
   "owner": { "name": "TeddyRoosevelty" },
   "plugins": [
