@@ -59,4 +59,4 @@ last_updated: {{YYYY-MM-DD}}
 - Match depth to the problem. A sharp, small problem gets a short statement — a section may be a single line. Drop a conditional section when it has nothing real to say; never leave an empty header or pad one with placeholder prose.
 - Keep it solution-free. The problem and the desired outcome describe the need and what success looks like, never the thing to build — that belongs to the work downstream. The exception is a constraint that genuinely bounds the problem.
 - Keep the desired outcome falsifiable: outcomes you could later check, not aspirations.
-- Write plainly, for a reader who isn't looking at the strategy, the code, or your analysis. Domain language is fine where it's needed; invented jargon isn't.
+- Write plainly, for a reader who isn't looking at the code or your analysis. Domain language is fine where it's needed; invented jargon isn't.

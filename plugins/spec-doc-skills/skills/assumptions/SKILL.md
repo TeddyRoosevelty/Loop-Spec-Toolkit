@@ -13,7 +13,7 @@ Read [assets/assumptions-template.md](assets/assumptions-template.md) up front �
 
 ### 1. Ground in the work
 
-Read the requirements or plan doc if one was pointed to, and any existing assumptions doc. Read the `STRATEGY.md` and `JTBD.md` — the product bets and user-intent assumptions the work inherits. Settle the work whose assumptions you're surfacing, then recap before drafting.
+Read the requirements or plan doc if one was pointed to, and any existing assumptions doc. Settle the work whose assumptions you're surfacing, then recap before drafting.
 
 ### 2. Analyze
 
@@ -39,7 +39,7 @@ Check that each item is genuinely an assumption, not an established fact; that t
 
 ### 4. Present
 
-Present the draft so the reader can follow it without the code or strategy in front of them.
+Present the draft so the reader can follow it without the code in front of them.
 
 #### The draft
 
@@ -101,20 +101,16 @@ Review and assess the results provided by the agent. Verify each finding it rais
 
 Unless specified otherwise, use the plugin data for where to find and save relevant plugin artifacts.
 - **Plugin Data Path** — `${user_config.save_path}`, or `.spec-docs/docs` if `save_path` isn't set. Create it if needed.
-- **STRATEGY.md** — `<plugin-data-path>/STRATEGY.md`
-- **JTBD.md** — `<plugin-data-path>/JTBD.md`
 - **Assumptions folder** — `<plugin-data-path>/assumptions`.
 - **Save File Name** — `<assumptions-folder>/<topic>-assumptions.md`.
 - **File name** — the topic; update it in place when revisiting.
 
 If the user names a path, use it.
 
-Read `STRATEGY.md` and `JTBD.md` directly with the Read tool, using the location provided. If a file isn't at that location, or its location isn't defined in context, skip it immediately. Do not search.
-
 ## Writing style
 
 - Write the doc and everything in chat to prioritize the reader's understanding — plain language, no jargon beyond the domain terms the work genuinely needs.
 - Don't narrate the analysis as a frame; use it to shape the assumptions.
-- Explain what isn't obvious — the reader isn't looking at the code, strategy, or your analysis.
+- Explain what isn't obvious — the reader isn't looking at the code or your analysis.
 - Keep questions for the user in their own section — don't bury them in prose.
 - Reserve the blocking-question tool for mechanical decisions with clear answers; framing and judgment belong in conversation.

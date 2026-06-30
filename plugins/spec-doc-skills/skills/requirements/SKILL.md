@@ -13,8 +13,6 @@ Compress a step when the idea is small enough that it doesn't earn the full trea
 
 ### 1. Recap, then confirm
 
-Read the `STRATEGY.md` and `JTBD.md` — the problems the product cares about and the user jobs a build must serve.
-
 Recap the idea back — problem, proposal, constraints, known downsides — in plain language. Confirm you've understood it correctly before running the panel.
 
 ### 2. Analyze
@@ -128,15 +126,11 @@ Call that subagent, asking for one of these exercises by name. The agent knows t
 
 Unless specified otherwise, use the plugin data for where to find and save relevant plugin artifacts.
 - **Plugin Data Path** — `${user_config.save_path}`, or `.spec-docs/docs` if `save_path` isn't set. Create it if needed.
-- **STRATEGY.md** — `<plugin-data-path>/STRATEGY.md`
-- **JTBD.md** — `<plugin-data-path>/JTBD.md`
 - **Requirements folder** — `<plugin-data-path>/requirements`.
 - **Save File Name** — `<requirements-folder>/YYYY-MM-DD-<topic>-requirements.md`
 - **File name** — today's date and the topic.
 
 Unsure where it should go? Ask with the blocking-question tool. Otherwise assume the defaults and confirm the path in the close.
-
-Read `STRATEGY.md` and `JTBD.md` directly with the Read tool, using the location provided. If a file isn't at that location, or its location isn't defined in context, skip it immediately. Do not search.
 
 ## Writing style
 

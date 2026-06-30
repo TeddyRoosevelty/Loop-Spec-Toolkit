@@ -13,7 +13,7 @@ Read [assets/decision-record-template.md](assets/decision-record-template.md) up
 
 ### 1. Ground in the decision
 
-Read the codebase and any architecture docs that bear on the decision. Read the `STRATEGY.md` — the strategic bet the decision should align with. Settle what's being decided — and whether it's an open choice or a de-facto one already made in the code — then recap and confirm before recording. 
+Read the codebase and any architecture docs that bear on the decision. Settle what's being decided — and whether it's an open choice or a de-facto one already made in the code — then recap and confirm before recording. 
 
 If it's a routine choice — no real contender, easy to reverse — say so and offer a one-line note instead of a full record. Check the decisions folder for an existing record on this choice; a decision that revisits one supersedes it.
 
@@ -105,14 +105,11 @@ Review and assess the results provided by the agent. Verify each finding it rais
 
 Unless specified otherwise, use the plugin data for where to find and save relevant plugin artifacts.
 - **Plugin Data Path** — `${user_config.save_path}`, or `.spec-docs/docs` if `save_path` isn't set. Create it if needed.
-- **STRATEGY.md** — `<plugin-data-path>/STRATEGY.md`
 - **Decisions folder** — `<plugin-data-path>/decisions`.
 - **Save File Name** — `<decisions-folder>/NNNN-<short-title>.md`
 - **File name** — a four-digit sequence `NNNN` bumped past any existing decision, and a short title.
 
 If the user names a path, use it.
-
-Read `STRATEGY.md` directly with the Read tool, using the location provided. If it isn't at that location, or its location isn't defined in context, skip it immediately. Do not search.
 
 ## Writing style
 

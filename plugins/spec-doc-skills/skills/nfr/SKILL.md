@@ -13,13 +13,13 @@ Read [assets/nfr-template.md](assets/nfr-template.md) up front — it's the arti
 
 ### 1. Ground in the system
 
-Read the `STRATEGY.md`, `JTBD.md`, and any existing NFR spec — the users, goals, and scenarios that point to which qualities matter. Settle which system or feature the targets cover and the conditions that matter — expected load, data volume, environment. Recap which quality attributes are in play and confirm the scope before setting targets.
+Read any existing NFR spec, and ground in the users, goals, and scenarios that point to which qualities matter. Settle which system or feature the targets cover and the conditions that matter — expected load, data volume, environment. Recap which quality attributes are in play and confirm the scope before setting targets.
 
 ### 2. Analyze
 
 Work out which quality attributes actually matter for this system and what realistic targets look like.
 
-- **Identify the attributes that bear on it.** From the strategy, the user scenarios, and the system's purpose — a real-time product leans on latency, a regulated one on security and compliance.
+- **Identify the attributes that bear on it.** From the user scenarios and the system's purpose — a real-time product leans on latency, a regulated one on security and compliance.
 - **Find the current baseline.** Read the code and config for what the stack does today, so targets are grounded, not plucked. Infer the baseline from code, config, and known behavior rather than running the system to measure it.
 - **Propose a target for each.** A sensible number per attribute that matters, knowing the user sets the real one.
 
@@ -39,7 +39,7 @@ Check that every target is measurable — a number or threshold, not an adjectiv
 
 ### 4. Present
 
-Present the draft so the reader can follow it without the code or strategy in front of them.
+Present the draft so the reader can follow it without the code in front of them.
 
 #### The draft
 
@@ -51,7 +51,7 @@ Close with an honest read: where targets are grounded in the current baseline, w
 
 ### 5. Facilitate
 
-The numbers are the user's to set — surface the ones that matter. Use the draft as something concrete to push against, but draw the questions from the strategy and the stack's real limits.
+The numbers are the user's to set — surface the ones that matter. Use the draft as something concrete to push against, but draw the questions from what the product actually needs and the stack's real limits.
 
 Be a thinking partner with small batches of questions, considering what the user leans toward before offering your read. Useful angles:
 
@@ -98,20 +98,16 @@ Review and assess the results provided by the agent. Verify each finding it rais
 
 Unless specified otherwise, use the plugin data for where to find and save relevant plugin artifacts.
 - **Plugin Data Path** — `${user_config.save_path}`, or `.spec-docs/docs` if `save_path` isn't set. Create it if needed.
-- **STRATEGY.md** — `<plugin-data-path>/STRATEGY.md`
-- **JTBD.md** — `<plugin-data-path>/JTBD.md`
 - **NFR folder** — `<plugin-data-path>/nfr`.
 - **Save File Name** — `<nfr-folder>/NFR.md`.
 - **File name** — always `NFR.md`.
 
 If the user scopes the spec to a single feature or names a path, use that path instead.
 
-Read `STRATEGY.md` and `JTBD.md` directly with the Read tool, using the location provided. If a file isn't at that location, or its location isn't defined in context, skip it immediately. Do not search.
-
 ## Writing style
 
 - Write the spec and everything in chat to prioritize the reader's understanding — plain language, no jargon beyond the domain terms the system genuinely needs.
 - Don't narrate the code-reading or your analysis as a frame; use it to shape the targets.
-- Explain what isn't obvious — the reader isn't looking at the code, config, or strategy.
+- Explain what isn't obvious — the reader isn't looking at the code or config.
 - Keep questions for the user in their own section — don't bury them in prose.
 - Reserve the blocking-question tool for mechanical decisions with clear answers; framing and judgment belong in conversation.

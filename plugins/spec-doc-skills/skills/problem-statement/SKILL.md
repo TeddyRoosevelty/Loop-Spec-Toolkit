@@ -13,11 +13,11 @@ Read [assets/problem-statement-template.md](assets/problem-statement-template.md
 
 ### 1. Recap, then confirm
 
-Read the `STRATEGY.md`, `JTBD.md`, and any notes, idea, or materials the user pointed to — the problems that matter to the product and who they hurt.
+Read any notes, idea, or materials the user pointed to — the problems that matter to the product and who they hurt.
 
 Recap the problem back — the situation, who it seems to hurt, what the user thinks it costs — in plain language. Treat that recap as the *stated* frame, not the truth: confirm you've got the right starting point before digging in, knowing the real problem may sit above or below it.
 
-When there's no strategy or anchoring direction, say so and work from what the user tells you; the framings still ground in real evidence.
+When there's no anchoring direction, say so and work from what the user tells you; the framings still ground in real evidence.
 
 ### 2. Analyze
 
@@ -146,15 +146,11 @@ Call that subagent, asking for one of these exercises by name. The agent knows t
 
 Unless specified otherwise, use the plugin data for where to find and save relevant plugin artifacts.
 - **Plugin Data Path** — `${user_config.save_path}`, or `.spec-docs/docs` if `save_path` isn't set. Create it if needed.
-- **STRATEGY.md** — `<plugin-data-path>/STRATEGY.md`
-- **JTBD.md** — `<plugin-data-path>/JTBD.md`
 - **Problems folder** — `<plugin-data-path>/problems`.
 - **Save File Name** — `<problems-folder>/YYYY-MM-DD-<topic>-problem.md`
 - **File name** — today's date and the topic.
 
 Unsure where it should go? Ask with the blocking-question tool. Otherwise assume the defaults and confirm the path in the close.
-
-Read `STRATEGY.md` and `JTBD.md` directly with the Read tool, using the location provided. If a file isn't at that location, or its location isn't defined in context, skip it immediately. Do not search.
 
 ## Writing style
 

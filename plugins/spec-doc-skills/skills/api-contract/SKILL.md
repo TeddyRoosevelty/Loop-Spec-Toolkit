@@ -13,7 +13,7 @@ Read [assets/api-contract-template.md](assets/api-contract-template.md) up front
 
 ### 1. Ground in the interface
 
-Read any existing contract or interface definition, and the `STRATEGY.md` — what the interface is for and the consumer needs it must serve. Settle the scope — which operations, which surface — and whether you're documenting an existing interface or specifying a new one. Recap and confirm before specifying.
+Read any existing contract or interface definition — what the interface is for and the consumer needs it must serve. Settle the scope — which operations, which surface — and whether you're documenting an existing interface or specifying a new one. Recap and confirm before specifying.
 
 - No contract → specify the scoped surface in full, then facilitate.
 - An existing contract → summarize what's there in a few lines, and work out with the user what to revisit.
@@ -101,14 +101,11 @@ Review and assess the results provided by the agent. Verify each finding it rais
 
 Unless specified otherwise, use the plugin data for where to find and save relevant plugin artifacts.
 - **Plugin Data Path** — `${user_config.save_path}`, or `.spec-docs/docs` if `save_path` isn't set. Create it if needed.
-- **STRATEGY.md** — `<plugin-data-path>/STRATEGY.md`
 - **Contracts folder** — `<plugin-data-path>/contracts`.
 - **Save File Name** — `<contracts-folder>/<interface>-contract.md`.
 - **File name** — the interface name; update it in place when revisiting.
 
 If the user names a path, use it.
-
-Read `STRATEGY.md` directly with the Read tool, using the location provided. If it isn't at that location, or its location isn't defined in context, skip it immediately. Do not search.
 
 ## Writing style
 

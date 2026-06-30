@@ -40,4 +40,4 @@ last_updated: {{YYYY-MM-DD}}
 - State every target as a measurable threshold with the condition it holds under and how it's verified — a number, not an adjective.
 - Mark proposed numbers as proposals until the user sets them; the targets are theirs to own.
 - Match depth to the system — a small feature gets a few targets, not a full quality model.
-- Write plainly, for a reader who isn't looking at the code or strategy. Domain language is fine where it's needed; invented jargon isn't.
+- Write plainly, for a reader who isn't looking at the code. Domain language is fine where it's needed; invented jargon isn't.

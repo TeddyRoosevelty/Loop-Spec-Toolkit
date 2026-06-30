@@ -44,4 +44,4 @@ last_updated: {{YYYY-MM-DD}}
 - Surface the load-bearing assumptions, the ones that would sink the work if wrong; don't fill the register with safe, obvious ones.
 - Rank riskiest first — critical and uncertain at the top.
 - Give each a way to validate, even if that's pointing to a spike; mark proposed risk ratings as proposals for the user to confirm.
-- Write plainly, for a reader who isn't looking at the code or strategy. Domain language is fine where it's needed; invented jargon isn't.
+- Write plainly, for a reader who isn't looking at the code. Domain language is fine where it's needed; invented jargon isn't.

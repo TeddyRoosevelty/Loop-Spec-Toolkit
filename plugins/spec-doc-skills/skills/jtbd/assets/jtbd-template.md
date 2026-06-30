@@ -1,6 +1,6 @@
 # JTBD Template
 
-A JTBD doc that complements `STRATEGY.md` — the main job the user hires the product for, the criteria they judge it by, and the concrete scenarios it should serve. The scenarios are the core: they with deciding what to build next, so they stay concrete, while the job and criteria stay durable across feature changes.
+A JTBD doc — the main job the user hires the product for, the criteria they judge it by, and the concrete scenarios it should serve. The scenarios are the core: they help decide what to build next, so they stay concrete, while the job and criteria stay durable across feature changes.
 
 ## Template
 
@@ -45,9 +45,9 @@ last_updated: {{YYYY-MM-DD}}
 - Related jobs are named, not decomposed — they get no criteria or scenarios of their own.
 - Emotional & social jobs are the feeling/perception layer of the main job, not separate jobs.
 - Delete the Related Jobs or Emotional & Social Jobs section if there's nothing real to put there — never leave an empty header.
-- This is a companion to `STRATEGY.md`. Don't restate the problem, approach, metrics, or tracks.
+- Stay at the level of the job. Don't restate the problem, drift into metrics, or spec the solution or features.
 - Keep the main job and criteria durable and solution-agnostic; let the scenarios be concrete and build-pointing.
-- Keep success criteria at the job level — the user's own yardsticks — not the product's feature list. Naming current capabilities there dates the doc and turns the job into a checklist; the job shouldn't move when the feature list does.
+- Keep success criteria at the job level — the user's own yardsticks — not the product's feature list or metrics. Naming current capabilities there dates the doc and turns the job into a checklist; the job shouldn't move when the feature list does.
 - Scenarios should be concrete — name the real trigger and what serves it. The subject is the user's moment, not a feature tour, but don't strip the specifics that make it actionable.
 - Keep it clear and easy to understand with traditional language choices. Avoid metaphors and jargon. Domain specific language is reasonable and necessary for clear communication, but do not invent our own. 
 - If there is more than one user, distinguish them appropriately in the scenarios, etc.
@@ -55,7 +55,7 @@ last_updated: {{YYYY-MM-DD}}
 ## Tips
 Tips for a well defined JTDB doc include (but not limited to):
 - frames the main job around the end user's progress, durable across feature changes
-- sets criteria that are the user's own observable yardsticks rather than the strategy's metrics
+- sets criteria that are the user's own observable yardsticks rather than product or feature metrics
 - grounds scenarios in concrete moments of the user succeeding, specific enough to build toward.
 
 Put the weight on the scenarios — make each concrete: the real trigger, what the user does, and what good looks like. Keep the criteria section light; it restates the job and isn't where the value is.

@@ -13,7 +13,7 @@ Read [assets/glossary-template.md](assets/glossary-template.md) up front — it'
 
 ### 1. Ground in the domain
 
-Read any existing glossary and the codebase's identifiers, models, and docs. Read the `STRATEGY.md` and `JTBD.md` — the product and domain vocabulary the team already uses. Settle the domain the vocabulary covers and recap its shape, then confirm the scope before drafting.
+Read any existing glossary and the codebase's identifiers, models, and docs. Settle the domain the vocabulary covers and recap its shape, then confirm the scope before drafting.
 
 ### 2. Analyze
 
@@ -94,15 +94,11 @@ Review and assess the results provided by the agent. Verify each finding it rais
 
 Unless specified otherwise, use the plugin data for where to find and save relevant plugin artifacts.
 - **Plugin Data Path** — `${user_config.save_path}`, or `.spec-docs/docs` if `save_path` isn't set. Create it if needed.
-- **STRATEGY.md** — `<plugin-data-path>/STRATEGY.md`
-- **JTBD.md** — `<plugin-data-path>/JTBD.md`
 - **Glossary folder** — `<plugin-data-path>/glossary`.
 - **Save File Name** — `<glossary-folder>/GLOSSARY.md`.
 - **File name** — always `GLOSSARY.md`.
 
 If the user scopes the glossary to a single domain or names a path, use that path instead.
-
-Read `STRATEGY.md` and `JTBD.md` directly with the Read tool, using the location provided. If a file isn't at that location, or its location isn't defined in context, skip it immediately. Do not search.
 
 ## Writing style
 

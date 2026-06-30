@@ -13,11 +13,11 @@ Match the depth to the subject.
 
 ### 1. Ground in the subject
 
-Read the `STRATEGY.md`, `JTBD.md`, and any materials provided — the direction the project's gaps are measured against.
+Read any materials provided — the direction the project's gaps are measured against.
 
 ### 2. Analyze
 
-Analyze the project against the strategy and goals to find where it falls short.
+Analyze the project against its direction and goals to find where it falls short.
 
 - **Find the gaps.** Identify discrepancies, misalignments, problems, and opportunity gaps against the direction and materials.
 - **Trace to the areas that move them.** The principle areas that would need to change to improve alignment or meet the goal.
@@ -104,15 +104,11 @@ Then, weigh which of your own critiques actually adds value, fold those in, and 
 
 Unless specified otherwise, use the plugin data for where to find and save relevant plugin artifacts.
 - **Plugin Data Path** — `${user_config.save_path}`, or `.spec-docs/docs` if `save_path` isn't set. Create it if needed.
-- **STRATEGY.md** — `<plugin-data-path>/STRATEGY.md`
-- **JTBD.md** — `<plugin-data-path>/JTBD.md`
 - **Ideation folder** — `<plugin-data-path>/ideation`.
 - **Save File Name** — `<ideation-folder>/YYYY-MM-DD-<topic>-ideation.md`
 - **File name** — today's date and the topic; use `-open-ideation.md` when there's no topic or focus.
 
 Unsure where it should go? Ask with the blocking-question tool. Otherwise assume the defaults.
-
-Read `STRATEGY.md` and `JTBD.md` directly with the Read tool, using the location provided. If a file isn't at that location, or its location isn't defined in context, skip it immediately. Do not search.
 
 ## Candidate standards
 

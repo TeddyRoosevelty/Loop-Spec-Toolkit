@@ -13,7 +13,7 @@ Read [assets/tech-spec-template.md](assets/tech-spec-template.md) up front — i
 
 ### 1. Ground in the work
 
-Read the requirements or problem doc if one was pointed to, and any existing spec. Read the `STRATEGY.md` and `JTBD.md` — the direction the design should fit and the user scenarios it must serve. Settle what's being designed — the feature, its goals and non-goals — and recap before designing. Read the codebase for the patterns and prior art the design should fit.
+Read the requirements or problem doc if one was pointed to, and any existing spec. Settle what's being designed — the feature, its goals and non-goals — and recap before designing. Read the codebase for the patterns and prior art the design should fit.
 
 ### 2. Analyze
 
@@ -101,15 +101,11 @@ Review and assess the results provided by the agents. Verify each scenario and f
 
 Unless specified otherwise, use the plugin data for where to find and save relevant plugin artifacts.
 - **Plugin Data Path** — `${user_config.save_path}`, or `.spec-docs/docs` if `save_path` isn't set. Create it if needed.
-- **STRATEGY.md** — `<plugin-data-path>/STRATEGY.md`
-- **JTBD.md** — `<plugin-data-path>/JTBD.md`
 - **Tech specs folder** — `<plugin-data-path>/tech-specs`.
 - **Save File Name** — `<tech-specs-folder>/YYYY-MM-DD-<topic>-tech-spec.md`
 - **File name** — today's date and the topic.
 
 Unsure where it should go? Ask with the blocking-question tool. Otherwise assume the defaults and confirm the path in the close.
-
-Read `STRATEGY.md` and `JTBD.md` directly with the Read tool, using the location provided. If a file isn't at that location, or its location isn't defined in context, skip it immediately. Do not search.
 
 ## Writing style
 

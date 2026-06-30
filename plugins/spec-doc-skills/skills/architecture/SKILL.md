@@ -13,7 +13,7 @@ Read [assets/architecture-template.md](assets/architecture-template.md) up front
 
 ### 1. Ground in the system
 
-Read any existing architecture doc, and the `STRATEGY.md` — what the system is for, so its load-bearing decisions stand out. Settle the scope — the whole system, one service, or a subsystem — and recap what it's for in a line or two, then confirm before mapping.
+Read any existing architecture doc to ground in what the system is for, so its load-bearing decisions stand out. Settle the scope — the whole system, one service, or a subsystem — and recap what it's for in a line or two, then confirm before mapping.
 
 - No doc → map the scope in full, then facilitate.
 - An existing doc → summarize what's there in a few lines, and work out with the user what to revisit.
@@ -102,14 +102,11 @@ Review and assess the results provided by the agent. Verify each finding it rais
 
 Unless specified otherwise, use the plugin data for where to find and save relevant plugin artifacts.
 - **Plugin Data Path** — `${user_config.save_path}`, or `.spec-docs/docs` if `save_path` isn't set. Create it if needed.
-- **STRATEGY.md** — `<plugin-data-path>/STRATEGY.md`
 - **Architecture folder** — `<plugin-data-path>/architecture`.
 - **Save File Name** — `<architecture-folder>/ARCHITECTURE.md`.
 - **File name** — always `ARCHITECTURE.md`.
 
 If the user scopes the doc to a single subsystem or names a path, use that path instead.
-
-Read `STRATEGY.md` directly with the Read tool, using the location provided. If it isn't at that location, or its location isn't defined in context, skip it immediately. Do not search.
 
 ## Writing style
 

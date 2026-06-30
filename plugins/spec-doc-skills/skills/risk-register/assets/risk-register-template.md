@@ -48,4 +48,4 @@ last_updated: {{YYYY-MM-DD}}
 - Make each risk specific to this work and give it a response; a generic risk with no response earns no row.
 - Add the Assumptions, Issues, or Dependencies sections only when the work warrants the full RAID; a register of just risks is fine.
 - When revisiting, update the register in place — move materialized risks to Issues, and close the ones that have been mitigated.
-- Write plainly, for a reader who isn't looking at the code or strategy. Domain language is fine where it's needed; invented jargon isn't.
+- Write plainly, for a reader who isn't looking at the code. Domain language is fine where it's needed; invented jargon isn't.

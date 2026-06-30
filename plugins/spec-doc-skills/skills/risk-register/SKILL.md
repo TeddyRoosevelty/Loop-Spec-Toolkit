@@ -13,7 +13,7 @@ Read [assets/risk-register-template.md](assets/risk-register-template.md) up fro
 
 ### 1. Ground in the work
 
-Read the plan or requirements doc if one was pointed to, and any existing register. Read the `STRATEGY.md` and `JTBD.md` — the product stakes and the user jobs a risk would harm. Settle what the register covers — the work, system, or timeframe — and recap it before assessing.
+Read the plan or requirements doc if one was pointed to, and any existing register. Settle what the register covers — the work, system, or timeframe — and recap it before assessing.
 
 - No register → assess the scope in full, then facilitate.
 - An existing register → summarize what's there, update the statuses, and work out with the user what to revisit.
@@ -22,7 +22,7 @@ Read the plan or requirements doc if one was pointed to, and any existing regist
 
 Surface what could derail the work and how to respond.
 
-- **Find risks across the angles.** Technical (from the code — fragile areas, dependencies, integrations), product and delivery (from the strategy, the user jobs, and scope), and the assumptions the work rests on.
+- **Find risks across the angles.** Technical (from the code — fragile areas, dependencies, integrations), product and delivery (from the user jobs and scope), and the assumptions the work rests on.
 - **Rate and respond.** For each real risk, assess its likelihood and impact and decide a response.
 
 For a substantial body of work, dispatch a `spec-doc-skills:judgement-analysis` agent:
@@ -48,7 +48,7 @@ Check that each risk is specific to this work and traceable to something real, n
 
 ### 4. Present
 
-Present the draft so the reader can follow it without the code or strategy in front of them.
+Present the draft so the reader can follow it without the code in front of them.
 
 #### The draft
 
@@ -60,7 +60,7 @@ Close with an honest read: where the risks are grounded and assessed, which rest
 
 ### 5. Facilitate
 
-Surface the risk decisions that actually matter — the ones your analysis exposed. Use the draft as something concrete to push against, but draw the questions from the code, the strategy, and the scope.
+Surface the risk decisions that actually matter — the ones your analysis exposed. Use the draft as something concrete to push against, but draw the questions from the code, the user jobs, and the scope.
 
 Be a thinking partner with small batches of questions, considering what the user leans toward before offering your read. Useful angles:
 
@@ -81,7 +81,7 @@ Save only when the user asks or confirms. Ask what's next with the blocking-ques
 
 The bar a risk register clears. A strong register is:
 
-- **Specific** — each risk is this work's real exposure, traceable to the code, strategy, or scope, not generic boilerplate.
+- **Specific** — each risk is this work's real exposure, traceable to the code, user jobs, or scope, not generic boilerplate.
 - **Assessed** — each carries a likelihood and an impact, so the register can be ranked.
 - **Actionable** — each has a response: mitigate, accept, avoid, or transfer — not just a statement of dread.
 - **Ranked** — it leads with the severe risks (likelihood × impact), not the order they were found.
@@ -107,20 +107,16 @@ Review and assess the results provided by the agent. Verify each finding it rais
 
 Unless specified otherwise, use the plugin data for where to find and save relevant plugin artifacts.
 - **Plugin Data Path** — `${user_config.save_path}`, or `.spec-docs/docs` if `save_path` isn't set. Create it if needed.
-- **STRATEGY.md** — `<plugin-data-path>/STRATEGY.md`
-- **JTBD.md** — `<plugin-data-path>/JTBD.md`
 - **Risks folder** — `<plugin-data-path>/risks`.
 - **Save File Name** — `<risks-folder>/<topic>-risks.md`.
 - **File name** — the topic; update it in place when revisiting.
 
 If the user names a path, use it.
 
-Read `STRATEGY.md` and `JTBD.md` directly with the Read tool, using the location provided. If a file isn't at that location, or its location isn't defined in context, skip it immediately. Do not search.
-
 ## Writing style
 
 - Write the register and everything in chat to prioritize the reader's understanding — plain language, no jargon beyond the domain terms the work genuinely needs.
 - Don't narrate the analysis as a frame; use it to shape the register.
-- Explain what isn't obvious — the reader isn't looking at the code, strategy, or your analysis.
+- Explain what isn't obvious — the reader isn't looking at the code or your analysis.
 - Keep questions for the user in their own section — don't bury them in prose.
 - Reserve the blocking-question tool for mechanical decisions with clear answers; framing and judgment belong in conversation.
