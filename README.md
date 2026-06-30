@@ -14,7 +14,7 @@ Good requirements are what make autonomous tasks deliver what you actually expec
 
 Building a task-management backend:
 
-```
+```bash
 # 1. Shape the specs — interactive working sessions; review each doc as you go
 /ls-requirements "Let's write the requirements for our task management app backend."
 /ls-architecture "I have an idea for the architecture I'd like..."
@@ -27,9 +27,21 @@ Building a task-management backend:
 /goal "@.loop-specs/task-management-backend implement the required features until completion. Stop when all features are complete, all requirements are met, and the build, tests, and linter are all green."
 ```
 
-Use as many or as few specs as the work needs — this is one path through the toolkit, not a fixed recipe.
+### Output
+The spec skills leave a reviewable spec bundle on disk — the same files `/goal` reads as its target:
 
-## How each skill works
+```
+.loop-specs/
+└── task-management-backend/
+    ├── requirements.md
+    ├── architecture.md
+    ├── api-contract.md
+    └── test-strategy.md
+```
+
+Use as many or as few specs as the work needs.
+
+### How each skill works
 
 Every skill runs the same shape — a short, collaborative process, not a one-shot generator:
 
@@ -42,6 +54,7 @@ Need it hands-off? Any skill can also run autonomously — it skips the back-and
 
 ## Install
 
+### Claude Code
 From inside Claude Code, add the marketplace and install the plugin:
 
 ```
@@ -52,6 +65,10 @@ From inside Claude Code, add the marketplace and install the plugin:
 Verify it worked by running `/plugin` — `loop-specs` should appear in your installed plugins. The skills are then available automatically; just describe what you want (e.g. *"write our JTBD"*) and the matching skill kicks in.
 
 Generated docs are saved under `.loop-specs/` in your project by default, grouped into a subfolder per feature.
+
+### Codex or other harnesses
+
+Just point your agent to the repo. They're smart, they'll figure it.
 
 ## Skills
 
@@ -107,6 +124,10 @@ Each of these is a spec — a goal to satisfy or a constraint to check against. 
 | **ls-test-strategy** | Plans how to prove a body of work correct: what to test, at which levels, and how much coverage is enough. | *"how should we test this"*                                       |
 | **ls-qa-plan**       | Builds a runnable pre-release checklist — automated, manual, and exploratory checks — with the exit gate.  | *"write the QA plan"*, *"what should we check before shipping X"* |
 
+
+## Why specs for Loop Engineering
+
+For more on the opinions and approach on why good specs matter for goal and loop engineering, see [Specs within Loop Engineering](docs/specs-within-loop-engineering.md).
 
 ## License
 
