@@ -116,3 +116,10 @@ Unsure where it should go? Ask with the blocking-question tool (unless running a
 - Explain what isn't obvious — the agent reading the brief isn't looking at your analysis.
 - Keep questions for the user in their own section — don't bury them in prose.
 - Reserve the blocking-question tool for mechanical decisions with clear answers; framing and judgment belong in conversation.
+
+
+## Argument Flags
+If the user arguments includes any of the following flags, follow them as if they are additional instructions:
+--save, --autoSave: Once finalized, save the document in the save set without prompting
+--autonomous, --auto: Run in autonomous mode. (see: "Running autonomously")
+--verify: Run the "Verify on request" step.

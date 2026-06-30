@@ -140,3 +140,10 @@ Unsure where it should go? Ask with the blocking-question tool (unless running a
 - Explain what isn't obvious. The reader is not viewing the code, the agent responses, or the docs — and sometimes doesn't have the idea in front of them either.
 - Keep questions for the user in their own section — don't bury them in the prose.
 - Reserve the blocking-question tool for mechanical decisions with clear answers; judgment, product, and alignment questions belong in conversation, where the context can travel with them.
+
+
+## Argument Flags
+If the user arguments includes any of the following flags, follow them as if they are additional instructions:
+--save, --autoSave: Once finalized, save the document in the save set without prompting
+--autonomous, --auto: Run in autonomous mode. (see: "Running autonomously")
+--verify: Run the "Verify on request" step.
