@@ -4,8 +4,8 @@
   "owner": { "name": "TeddyRoosevelty" },
   "plugins": [
     {
-      "name": "spec-docs",
-      "source": "./plugins/spec-doc-skills",
+      "name": "loop-specs",
+      "source": "./plugins/loop-specs",
       "description": "Generate grounded improvement ideas, shape them into requirements docs, turn those into implementation plans and ship them, review the changes, and design the JTBD and supporting spec docs."
     }
   ]

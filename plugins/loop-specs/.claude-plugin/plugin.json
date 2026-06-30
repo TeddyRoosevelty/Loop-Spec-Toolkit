@@ -1,0 +1,16 @@
+{
+  "name": "loop-specs",
+  "description": "Generate grounded improvement ideas, shape them into requirements docs, turn those into implementation plans and ship them, review the changes, and design the JTBD and supporting spec docs.",
+  "version": "0.13.0",
+  "author": {
+    "name": "TeddyRoosevelty"
+  },
+  "userConfig": {
+    "save_path": {
+      "type": "directory",
+      "title": "Document save location",
+      "description": "Root folder where Spec Doc Skills save their documents, relative to the project root. Each feature's documents are grouped together in a subfolder named for that feature.",
+      "default": ".loop-specs"
+    }
+  }
+}
