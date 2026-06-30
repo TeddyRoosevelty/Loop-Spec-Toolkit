@@ -9,8 +9,8 @@
     "save_path": {
       "type": "directory",
       "title": "Document save location",
-      "description": "Root folder where Spec Doc Skills save their documents, relative to the project root. Each skill saves into its own subfolder beneath it.",
-      "default": ".spec-docs/docs"
+      "description": "Root folder where Spec Doc Skills save their documents, relative to the project root. Each feature's documents are grouped together in a subfolder named for that feature.",
+      "default": ".spec-docs"
     }
   }
 }

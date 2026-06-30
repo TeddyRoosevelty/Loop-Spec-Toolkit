@@ -102,12 +102,12 @@ Review and assess the results provided by the agent. Verify each gap it raises �
 ## Plugin Data Location Config
 
 Unless specified otherwise, use the plugin data for where to find and save relevant plugin artifacts.
-- **Plugin Data Path** — `${user_config.save_path}`, or `.spec-docs/docs` if `save_path` isn't set. Create it if needed.
-- **Task briefs folder** — `<plugin-data-path>/task-briefs`.
-- **Save File Name** — `<task-briefs-folder>/YYYY-MM-DD-<topic>-brief.md`
-- **File name** — today's date and the topic.
+- **Plugin Data Path** — `${user_config.save_path}`, or `.spec-docs` if `save_path` isn't set. Create it if needed.
+- **Feature folder** — `<plugin-data-path>/<feature-slug>`.
+- **Feature slug** — 2–4 words, hyphenated. Before saving, check the existing folders under the plugin data path for any that clearly match (name and recency). Assume a new slug if none clearly match.
+- **Save File Name** — `<feature-folder>/task-brief.md`. Fixed, lowercase.
 
-Unsure where it should go? Ask with the blocking-question tool. Otherwise assume the defaults and confirm the path in the close.
+Unsure where it should go? Ask with the blocking-question tool (unless running autonomously). Otherwise assume the defaults and confirm the resolved path in the close.
 
 ## Writing style
 

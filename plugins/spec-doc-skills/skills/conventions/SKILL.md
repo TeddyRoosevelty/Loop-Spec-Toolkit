@@ -93,10 +93,12 @@ Review and assess the results provided by the agent. Verify each finding it rais
 ## Plugin Data Location Config
 
 Unless specified otherwise, use the plugin data for where to find and save relevant plugin artifacts.
-- **Plugin Data Path** — `${user_config.save_path}`, or `.spec-docs/docs` if `save_path` isn't set. Create it if needed.
-- **Conventions folder** — `<plugin-data-path>/conventions`.
-- **Save File Name** — `<conventions-folder>/CONVENTIONS.md`.
-- **File name** — always `CONVENTIONS.md`.
+- **Plugin Data Path** — `${user_config.save_path}`, or `.spec-docs` if `save_path` isn't set. Create it if needed.
+- **Feature folder** — `<plugin-data-path>/<feature-slug>`.
+- **Feature slug** — 2–4 words, hyphenated. Before saving, check the existing folders under the plugin data path for any that clearly match (name and recency). Assume a new slug if none clearly match.
+- **Save File Name** — `<feature-folder>/conventions.md`. Fixed, lowercase.
+
+Unsure where it should go? Ask with the blocking-question tool (unless running autonomously). Otherwise assume the defaults and confirm the resolved path in the close.
 
 If the user wants it to live at the repo's `CLAUDE.md` or `AGENTS.md`, or names a path, use that instead.
 

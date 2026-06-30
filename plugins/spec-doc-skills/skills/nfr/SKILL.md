@@ -97,12 +97,12 @@ Review and assess the results provided by the agent. Verify each finding it rais
 ## Plugin Data Location Config
 
 Unless specified otherwise, use the plugin data for where to find and save relevant plugin artifacts.
-- **Plugin Data Path** — `${user_config.save_path}`, or `.spec-docs/docs` if `save_path` isn't set. Create it if needed.
-- **NFR folder** — `<plugin-data-path>/nfr`.
-- **Save File Name** — `<nfr-folder>/NFR.md`.
-- **File name** — always `NFR.md`.
+- **Plugin Data Path** — `${user_config.save_path}`, or `.spec-docs` if `save_path` isn't set. Create it if needed.
+- **Feature folder** — `<plugin-data-path>/<feature-slug>`.
+- **Feature slug** — 2–4 words, hyphenated. Before saving, check the existing folders under the plugin data path for any that clearly match (name and recency). Assume a new slug if none clearly match.
+- **Save File Name** — `<feature-folder>/nfr.md`. Fixed, lowercase.
 
-If the user scopes the spec to a single feature or names a path, use that path instead.
+Unsure where it should go? Ask with the blocking-question tool (unless running autonomously). Otherwise assume the defaults and confirm the resolved path in the close.
 
 ## Writing style
 
