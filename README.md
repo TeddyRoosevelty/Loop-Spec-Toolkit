@@ -1,14 +1,14 @@
-# Shipwright
+# Loop Spec Toolkit
 
 > Claude Code skills for writing the spec docs your agents read — so they build what you meant, not what they guessed.
 
-An autonomous agent doesn't stop when its context runs thin. It fills the gap with a plausible guess and builds on it at full speed — and you find out only after it's built the wrong thing well. Shipwright is a toolbox of skills for writing the docs that hold the context the agent is missing: a spec, your conventions, a task brief. Each one drafts the whole document first, then asks you only the decisions that actually matter.
+An autonomous agent doesn't stop when its context runs thin. It fills the gap with a plausible guess and builds on it at full speed — and you find out only after it's built the wrong thing well. Loop Spec Toolkit is a toolbox of skills for writing the docs that hold the context the agent is missing: a spec, your conventions, a task brief. Each one drafts the whole document first, then asks you only the decisions that actually matter.
 
 <!--
 SEE IT WORK — replace this block with a real demo.
 Best: a short GIF or screencast of one skill firing in Claude Code and producing
 a doc. Second best: a before/after transcript — the thin prompt that sends an
-agent down the wrong path, then the same task after a Shipwright doc gives it the
+agent down the wrong path, then the same task after a Loop Spec Toolkit doc gives it the
 context. Show it doing the work; don't describe it.
 -->
 
@@ -17,8 +17,8 @@ context. Show it doing the work; don't describe it.
 In Claude Code, register the marketplace and install the plugin:
 
 ```
-/plugin marketplace add TeddyRoosevelty/Shipwright-Marketplace
-/plugin install spec-docs@shipwright
+/plugin marketplace add TeddyRoosevelty/Loop-Spec-Toolkit
+/plugin install spec-docs@loop-spec-toolkit
 ```
 
 Or run `/plugin` to browse and install from the menu.
@@ -78,7 +78,7 @@ To confirm it worked, ask Claude to "write our JTBD" — the jtbd skill should p
 
 ## What it doesn't do
 
-- **It doesn't verify what the agent builds.** Shipwright is the context going *in*. Checking that the understanding survived the build — review, verification — is a different job, and not this one.
+- **It doesn't verify what the agent builds.** Loop Spec Toolkit is the context going *in*. Checking that the understanding survived the build — review, verification — is a different job, and not this one.
 - **It doesn't enforce a process.** No skill requires another. There's no flow to follow and nothing tracks whether you wrote the "right" docs.
 - **It doesn't replace your judgment.** It drafts and narrows the decisions; you still make the calls that matter.
 

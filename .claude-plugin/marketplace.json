@@ -1,5 +1,5 @@
 {
-  "name": "shipwright",
+  "name": "loop-spec-toolkit",
   "description": "A marketplace of Claude Code plugins.",
   "owner": { "name": "TeddyRoosevelty" },
   "plugins": [
