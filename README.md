@@ -1,34 +1,35 @@
 # Loop Spec Toolkit
 
-> The easiest way to turn your vision and judgment into requirements for Claude Code loops, goals, and autonomous work.
+> The easiest way to turn your vision and judgment into requirement docs for Claude Code loops, goals, and autonomous work.
 
-An opinionated toolkit of skills built to prioritize:
+An opinionated collection of skills for creating specs, built to prioritize your time, focus, and effort to get the most out of your sessions.
 
-- **Low manual effort** — minimal hand-authoring
-- **High-impact specs** — requirements that actually steer the agent
-- **Flexible execution** — fits loops, goals, and autonomous runs
+- **Low manual effort** - right sized to where it matters
+- **High-impact specs** - leveraging best practices
+- **Flexible execution** - to fit different tasks, sizes, and personal workflows
 
-Good requirements are what make autonomous tasks deliver what you actually expect — and defining them shouldn't be the hardest part of the job.
+Good requirements allow autonomous tasks to deliver what you actually expect - defining them shouldn't be the hardest part.
 
 ## Usage Example
 
-Building a task-management backend:
+Building a task-management board backend:
 
 ```bash
-# 1. Shape the specs — interactive working sessions; review each doc as you go
-/ls-requirements "Let's write the requirements for our task management app backend."
+# 1. Shape the specs that matter most for the task - interactive working sessions; review each doc as you go. 
+/ls-requirements "Write the requirements for our task management board backend."
 /ls-architecture "I have an idea for the architecture I'd like..."
 
-# 2. Fill in the mechanical specs — let these run on their own
+# 2. Automatically pre-plan the specs you want to see and/or refine
 /ls-api-contract "Design the api for my review --autonomous --autoSave"
 /ls-test-strategy "let's create tests --autonomous --autoSave"
 
-# 3. Review the saved specs, then hand them to a loop
-/goal "@.loop-specs/task-management-backend implement the required features until completion. Stop when all features are complete, all requirements are met, and the build, tests, and linter are all green."
+# 3. When ready, hand them to a loop. The agent will naturally decide themselves for anything not specified.
+/goal "@.loop-specs/task-management-backend implement this backend completely. Before stopping, make sure all requirements are complete, the build, tests, and linter are all green."
 ```
 
-### Output
-The spec skills leave a reviewable spec bundle on disk — the same files `/goal` reads as its target:
+
+
+**Output**: The spec skills leave a reviewable bundle on disk:
 
 ```
 .loop-specs/
@@ -39,22 +40,39 @@ The spec skills leave a reviewable spec bundle on disk — the same files `/goal
     └── test-strategy.md
 ```
 
-Use as many or as few specs as the work needs.
+
+
+*Create as many or as few targetted specs as you need. Choose based on your task and your priorities.*
+
+*Each helps with surfacing and guiding the model's judgement and thinking ahead of execution. They provide a targetted, focused way to help manage the context, requirements, and direction for the task.*
+
+## How it works
+
+Each spec you build for a feature gets added to a small feature bundle of specs - each one focused on a specific angle of the work.
+
+### What each doc gives you
+
+Every skill owns one question and answers it using a well-designed template that reflects best practice. Keeping them separate means the model spends focused effort on that single high-leverage angle, so each doc stays right-sized and earns its place. Together they cover a task from the surfaces you choose to pre-define.
 
 ### How each skill works
 
-Every skill runs the same shape — a short, collaborative process, not a one-shot generator:
+Every skill runs the same shape - a short, collaborative process, not a one-shot generator:
 
-- **Analyze** — reads your inputs and the real code, recaps what it understood to confirm direction, then works it into a grounded read of the problem (dispatching subagents when the problem warrants it).
-- **Draft** — produces the doc and checks its own work, then presents it with an honest account of what's solid and what rests on assumptions.
-- **Facilitate** — works through the decisions that actually matter with you, converging on a version you approve.
-- **Save** — writes the doc only when you confirm — ready for the next skill, or a loop, to pick up.
+- **Analyze** - reads your inputs and code, recaps what it understood to confirm direction, then works it into a grounded read (dispatching subagents when the task needs it).
+- **Draft** - produces the spec and checks its own work, then presents it with an assessment of what rests on assumptions and the core judgement areas.
+- **Facilitate** - works through the decisions that actually matter with you, converging on a version you approve.
+- **Save** - writes the doc once aligned/confirmed.
 
-Need it hands-off? Any skill can also run autonomously — it skips the back-and-forth and self-checks before saving.
+Need it hands-off? Any skill can also run autonomously - it skips the back-and-forth and self-checks before saving. Check and refine it after, as needed.
+
+### Mixing and matching
+
+Pick the few docs that matter for the task and its size - one requirements doc for something small, a fuller set when the work would benefit from it. Since the outputs are light, standard artifacts, the bundle drops into a one-shot task, a loop, a goal, or a long-running workflow.
 
 ## Install
 
 ### Claude Code
+
 From inside Claude Code, add the marketplace and install the plugin:
 
 ```
@@ -62,7 +80,7 @@ From inside Claude Code, add the marketplace and install the plugin:
 /plugin install loop-specs@loop-spec-toolkit
 ```
 
-Verify it worked by running `/plugin` — `loop-specs` should appear in your installed plugins. The skills are then available automatically; just describe what you want (e.g. *"write our JTBD"*) and the matching skill kicks in.
+Verify it worked by running `/plugin` - `loop-specs` should appear in your installed plugins. The skills are then available automatically; just describe what you want (e.g. *"write our JTBD"*) and the matching skill kicks in.
 
 Generated docs are saved under `.loop-specs/` in your project by default, grouped into a subfolder per feature.
 
@@ -72,9 +90,9 @@ Just point your agent to the repo. They're smart, they'll figure it.
 
 ## Skills
 
-Each of these is a spec — a goal to satisfy or a constraint to check against. They differ by what they pin down.
+Each of these is a spec - a goal to satisfy or a constraint to check against. They differ by what they pin down.
 
-### Purpose — what to build and the bar it must clear
+### Purpose - what to build and the bar it must clear
 
 
 | Skill               | What it does                                                                                                                    | Trigger it with                                                |
@@ -84,18 +102,18 @@ Each of these is a spec — a goal to satisfy or a constraint to check against. 
 | **ls-nfr**          | Turns quality bars (performance, reliability, security, accessibility) into measurable, verifiable targets.                     | *"write the NFRs for X"*, *"what are our performance targets"* |
 
 
-### Design — how the system is shaped
+### Design - how the system is shaped
 
 
 | Skill               | What it does                                                                                                    | Trigger it with                                               |
 | ------------------- | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
 | **ls-architecture** | Maps a system's components, how they fit together, the load-bearing decisions, and the stack.                   | *"document the architecture"*, *"map how this fits together"* |
 | **ls-tech-spec**    | Drafts the design (RFC) for one piece of work: approach, components, alternatives weighed, and open questions.  | *"write a design doc for X"*, *"draft an RFC"*                |
-| **ls-api-contract** | Pins down an interface contract — operations, request/response shapes, errors, and auth — grounded in the code. | *"spec this API"*, *"define the contract for X"*              |
+| **ls-api-contract** | Pins down an interface contract - operations, request/response shapes, errors, and auth - grounded in the code. | *"spec this API"*, *"define the contract for X"*              |
 | **ls-data-model**   | Captures the entities a system holds, their fields and relationships, and the rules that govern the data.       | *"document the data model"*, *"design the schema for X"*      |
 
 
-### Standards — the language and rules work must conform to
+### Standards - the language and rules work must conform to
 
 
 | Skill              | What it does                                                                                       | Trigger it with                                                      |
@@ -104,7 +122,7 @@ Each of these is a spec — a goal to satisfy or a constraint to check against. 
 | **ls-glossary**    | Captures the domain terms a project uses and their precise definitions, for consistent vocabulary. | *"write our glossary"*, *"define the domain terms"*                  |
 
 
-### Plan of work — how the effort is sliced and handed off
+### Plan of work - how the effort is sliced and handed off
 
 
 | Skill                 | What it does                                                                                 | Trigger it with                                                  |
@@ -113,7 +131,7 @@ Each of these is a spec — a goal to satisfy or a constraint to check against. 
 | **ls-task-brief**     | Packages one unit of work into a self-contained brief a cold agent can build without asking. | *"write a task brief for X"*, *"package this task for an agent"* |
 
 
-### Risk & proof — what could go wrong and how you'll know it's right
+### Risk & proof - what could go wrong and how you'll know it's right
 
 
 | Skill                | What it does                                                                                               | Trigger it with                                                   |
@@ -122,7 +140,7 @@ Each of these is a spec — a goal to satisfy or a constraint to check against. 
 | **ls-risk-register** | Surfaces and tracks what could derail a body of work, each risk with likelihood, impact, and response.     | *"what are the risks"*, *"build a risk register for X"*           |
 | **ls-threat-model**  | Analyzes what's worth protecting, how it could be attacked, and the mitigations that defend it.            | *"threat-model this"*                                             |
 | **ls-test-strategy** | Plans how to prove a body of work correct: what to test, at which levels, and how much coverage is enough. | *"how should we test this"*                                       |
-| **ls-qa-plan**       | Builds a runnable pre-release checklist — automated, manual, and exploratory checks — with the exit gate.  | *"write the QA plan"*, *"what should we check before shipping X"* |
+| **ls-qa-plan**       | Builds a runnable pre-release checklist - automated, manual, and exploratory checks - with the exit gate.  | *"write the QA plan"*, *"what should we check before shipping X"* |
 
 
 ## Why specs for Loop Engineering
@@ -131,4 +149,4 @@ For more on the opinions and approach on why good specs matter for goal and loop
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT - see [LICENSE](LICENSE).
