@@ -5,7 +5,7 @@
 An opinionated collection of skills for creating specs, built to prioritize your time, focus, and effort to get the most out of your sessions.
 
 - **Low manual effort** - right sized to where it matters
-- **High-impact specs** - leveraging best practices
+- **Right sized** - high impact specs, leveraging best practices
 - **Flexible execution** - to fit different tasks, sizes, and personal workflows
 
 Good requirements allow autonomous tasks to deliver what you actually expect - defining them shouldn't be the hardest part.
@@ -146,6 +146,15 @@ Each of these is a spec - a goal to satisfy or a constraint to check against. Th
 ## Why specs for Loop Engineering
 
 For more on the opinions and approach on why good specs matter for goal and loop engineering, see [Specs within Loop Engineering](docs/specs-within-loop-engineering.md).
+
+## Plugin Roadmap
+
+Loop Spec Toolkit is becoming a family of plugins around one core principle: Creating specs for loops, goals, and autonomous work should be easy, flexible, and right-sized. 
+
+- ✅ **Loop Specs** — a plugin with one skill per spec template; Each its own call giving the most control.
+- ◻ **Loop Spec Skill** *(unified)* — a single skill entry point; routes to the right spec(s) providing a smaller skill footprint.
+- ◻ **Loop Spec Workflow** — Claude Code workflow/ultracode templates, for more customization and leverage.
+- ◻ **Loop Spec Evals** — the tests a loop is judged by: deterministic checks and LLM-judgement rubrics for goals and loops.
 
 ## License
 
