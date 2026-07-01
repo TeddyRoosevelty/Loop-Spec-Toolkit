@@ -1,6 +1,6 @@
 # Loop Spec Toolkit
 
-> The easiest way to turn your vision and judgment into requirement docs for Claude Code loops, goals, and autonomous work.
+> The easiest way to turn your vision and judgment into specs for Claude Code loops, goals, and autonomous work.
 
 An opinionated collection of skills for creating specs, built to prioritize your time, focus, and effort to get the most out of your sessions.
 
@@ -8,7 +8,9 @@ An opinionated collection of skills for creating specs, built to prioritize your
 - **Right sized** - high impact specs, leveraging best practices
 - **Flexible execution** - to fit different tasks, sizes, and personal workflows
 
-Good requirements allow autonomous tasks to deliver what you actually expect - defining them shouldn't be the hardest part.
+Good context and requirements allow autonomous tasks to deliver what you want and expect - defining them shouldn't be the hardest part.
+
+*See [Specs within Loop Engineering](docs/specs-within-loop-engineering.md).*
 
 ## Usage Example
 
@@ -27,8 +29,6 @@ Building a task-management board backend:
 /goal "@.loop-specs/task-management-backend implement this backend completely. Before stopping, make sure all requirements are complete, the build, tests, and linter are all green."
 ```
 
-
-
 **Output**: The spec skills leave a reviewable bundle on disk:
 
 ```
@@ -40,15 +40,13 @@ Building a task-management board backend:
     └── test-strategy.md
 ```
 
-
-
 *Create as many or as few targetted specs as you need. Choose based on your task and your priorities.*
 
 *Each helps with surfacing and guiding the model's judgement and thinking ahead of execution. They provide a targetted, focused way to help manage the context, requirements, and direction for the task.*
 
 ## How it works
 
-Each spec you build for a feature gets added to a small feature bundle of specs - each one focused on a specific angle of the work.
+Each spec you build for a feature gets added to a small feature bundle - each one focused on a specific angle of the work. Together, the bundle is the context you're handing the loop: made explicit and reviewable, instead of trapped in your head.
 
 ### What each doc gives you
 
@@ -142,10 +140,6 @@ Each of these is a spec - a goal to satisfy or a constraint to check against. Th
 | **ls-test-strategy** | Plans how to prove a body of work correct: what to test, at which levels, and how much coverage is enough. | *"how should we test this"*                                       |
 | **ls-qa-plan**       | Builds a runnable pre-release checklist - automated, manual, and exploratory checks - with the exit gate.  | *"write the QA plan"*, *"what should we check before shipping X"* |
 
-
-## Why specs for Loop Engineering
-
-For more on the opinions and approach on why good specs matter for goal and loop engineering, see [Specs within Loop Engineering](docs/specs-within-loop-engineering.md).
 
 ## Plugin Roadmap
 
