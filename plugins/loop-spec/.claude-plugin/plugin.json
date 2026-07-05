@@ -1,0 +1,16 @@
+{
+  "name": "loop-spec",
+  "description": "One skill that builds any spec doc — requirements, architecture, tech spec, threat model, and twelve more. It decides which docs a task needs, aligns on the list, then produces them one at a time.",
+  "version": "0.2.1",
+  "author": {
+    "name": "TeddyRoosevelty"
+  },
+  "userConfig": {
+    "save_path": {
+      "type": "directory",
+      "title": "Document save location",
+      "description": "Root folder where the spec skill saves its documents, relative to the project root. Each feature's documents are grouped together in a subfolder named for that feature.",
+      "default": ".loop-specs"
+    }
+  }
+}

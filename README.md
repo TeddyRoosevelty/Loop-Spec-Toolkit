@@ -146,7 +146,7 @@ Each of these is a spec - a goal to satisfy or a constraint to check against. Th
 Loop Spec Toolkit is becoming a family of plugins around one core principle: Creating specs for loops, goals, and autonomous work should be easy, flexible, and right-sized. 
 
 - ✅ **Loop Specs** — a plugin with one skill per spec template; Each its own call giving the most control.
-- ◻ **Loop Spec Skill** *(unified)* — a single skill entry point; routes to the right spec(s) providing a smaller skill footprint.
+- ⚒ **Loop Spec Skill** *(unified)* — a single skill entry point; routes to the right spec(s) providing a smaller skill footprint.
 - ◻ **Loop Spec Workflow** — Claude Code workflow/ultracode templates, for more customization and leverage.
 - ◻ **Loop Spec Evals** — the tests a loop is judged by: deterministic checks and LLM-judgement rubrics for goals and loops.
 
