@@ -16,7 +16,7 @@ Given a task, surface its open decisions, map them to a right-sized collection o
 3. **Choose the specs needed.** Select a right-sized set from the catalog for the task. Evaluate the spec catalog and choose those that, in aggregate, would provide all the decisions that need to be settled ahead of execution a home. Spec effort scales with the decisions, uncertainty, and chance for misalignment, not the task's size or importance. A doc without unique, meaningful decisions is noise, which will be harmful to execution.
 4. **Propose and confirm.** Present the recommended list of specs, in order of dependency and with an explaination on why those were selected and what decisions they help clarify. If available, include a set of 1-3 additional specs which may be worth including in the set that could help clarify other decisions, and an explaination. For the rest, list them as excluded. When unsure whether something makes the set, leave it out and say so.
 5. **Produce each doc.** Run the full per-document process below to completion — through capture — for the current doc.
-6. **Re-check, then advance.** A finished doc can settle decisions the plan assigned to later docs, or open new ones. Update the inventory, adjust the remaining set, and raise any change with the user. Repeat until all are complete.
+6. **Re-check, then advance.** After each document is complete, before moving on to the next document, you *must* do an evaluation and consider if there are any new specs to add to the plan, or any specs planned that no longer seem valuable. Update the inventory, adjust the remaining set, and raise any change with the user. Repeat until all are complete.
 
 Note: Decisions that are already settled, or best deferred until execution, should be excluded from the spec evaluation.
 
@@ -71,12 +71,6 @@ Save only when the user asks or confirms. Ask what's next with the blocking-ques
 
 When more docs remain in the agreed list, move to the next one after capture.
 
-## The doc catalog
-
-Each doc type has a spec card at `assets/cards/<doc>.md` and a template at `assets/templates/<doc>.md`, and saves as `<doc>.md`. Load a card only when its doc is about to be produced — never all of them.
-
-Every doc pins down one kind of judgment ahead of execution. The groups run in stage order — earlier groups usually feed later ones.
-
 ## Running autonomously
 
 When asked to run autonomously, make the select-and-sequence call yourself — state the list and proceed — and skip facilitation for each doc.
@@ -119,6 +113,12 @@ If the user arguments include any of the following flags, follow them as if they
 --save, --autoSave: Once finalized, save each document in the save set without prompting
 --autonomous, --auto: Run in autonomous mode. (see: "Running autonomously")
 --verify: Run the "Verify on request" step on each doc.
+
+## The doc catalog
+
+Each doc type has a spec card at `assets/cards/<doc>.md` and a template at `assets/templates/<doc>.md`, and saves as `<doc>.md`. Load a card only when its doc is about to be produced — never all of them.
+
+Every doc pins down one kind of judgment ahead of execution. The groups run in stage order — earlier groups usually feed later ones.
 
 ### Specs Catalog
 
