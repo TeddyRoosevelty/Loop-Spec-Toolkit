@@ -1,7 +1,8 @@
 ---
-
-## description: Build any spec doc for a product, feature, or autonomous task. Requirements, JTBD, architecture, tech spec, data model, API contract, conventions, glossary, NFRs, threat model, test strategy, QA plan, risk register, assumptions, work breakdown, or task brief. Use when the user wants a task specced ahead of an agent loop or goal, "spec this out", "write the docs for this feature".
+name: spec
+description: Build any spec doc for a product, feature, or autonomous task. Requirements, JTBD, architecture, tech spec, data model, API contract, conventions, glossary, NFRs, threat model, test strategy, QA plan, risk register, assumptions, work breakdown, or task brief. Use when the user wants a task specced ahead of an agent loop or goal, "spec this out", "write the docs for this feature".
 argument-hint: "[the task, feature, or system to spec — and any doc types already known to be wanted]"
+---
 
 # Spec Builder
 

@@ -12,6 +12,7 @@ The idea itself. Recap it back — problem, proposal, constraints, known downsid
 
 Examine the idea from several angles in session — first principles (what problem is really being solved), compared-to-what (the cheaper or existing alternative), the assumptions and constraints it takes as fixed, a premortem (how this fails), and the smallest honest form of it. Read across the angles for where they align, where they diverge, and which assumptions or constraints they question.
 
+Read across the angles for where they align, where they diverge, and which assumptions or constraints they question.
 Then write **three interpretations that are substantively different** — each resting on a different assumption questioned or constraint changed, not three sizes of one idea. Each stands alone, jargon-free, with:
 
 - **Goal** — what this version is really trying to achieve.
